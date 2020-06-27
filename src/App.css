@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
+:root{
+  --grapefruit: #ff5a5a;
+  --greenish-teal: #2ecc71;
+  --warm-grey: #9b9b9b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container */
+.main-container {
+  width: 442px;
+  height: 540px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0);
+  margin: 3rem auto;
+  padding: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header */
+.engi {
+  width: 80px;
+  height: 86px;
+  object-fit: contain;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h1.faculty {
+  width: 335.4px;
+  height: 16px;
+  font-family: Prompt;
+  font-size: 24px !important;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--grapefruit);
+  display: inline-block;
+}
+
+h1.major {
+  width: 203px;
+  height: 16px;
+  font-family: Prompt;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--warm-grey);
+}
+
+h1.university {
+  width: 217.2px;
+  height: 16px;
+  font-family: Prompt;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--warm-grey);
+  margin-top: 1.5rem;
+}
+
+.fav-icon {
+  /* width: 24px; */
+  height: 21px;
+  object-fit: contain;
+  float: right;
+  margin-left: 0.5rem;
+}
+
+.separator {
+  /* width: 400px; */
+  /* height: 3px; */
+  border: solid 1px #d8d8d8;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+/* Content */
+.available-round {
+  width: 79px;
+  height: 21px;
+  font-family: Prompt;
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.01;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5f5f5f;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.oval-active {
+  width: 29px;
+  height: 29px;
+  background-color: var(--greenish-teal);
+  border-radius: 4rem;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-top: -1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.oval-inactive {
+  width: 29px;
+  height: 29px;
+  background-color: #d8d8d8;
+  border-radius: 4rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-top: -1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1.round {
+  /* width: 6px; */
+  height: 28px;
+  font-family: Prompt;
+  font-size: 18.4px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.admission {
+  /* width: 399px; */
+  height: 16px;
+  font-family: Prompt;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--grapefruit);
+  display: inline-block;
+}
+
+.edit-score-button {
+  width: 120px;
+  height: 35px;
+  border-radius: 17.5px;
+  border: solid 1px var(--grapefruit);
+  background: none;
+  text-align: center;
+  float: right;
+  /* display: inline-block; */
+}
+
+.edit-score {
+  /* width: 61px;
+  height: 18px; */
+  font-family: Prompt;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--grapefruit);
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.edit-score-logo {
+  /* width: 18px;
+  height: 18px; */
+  object-fit: contain;
+  display: inline-block;
+}
+
+.badgeIcon {
+  width: 27px;
+  height: 35px;
+  object-fit: contain;
+  display: inline-block;
+  position: relative;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.my-score {
+  /* width: 144px; */
+  height: 16px;
+  font-family: Prompt;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: right;
+  color: #4a4a4a;
+  float: right;
+}
+
+.score {
+  /* width: 132px; */
+  height: 64px;
+  font-family: Prompt;
+  font-size: 42px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #4a4a4a;
+}
+
+.score-detail  {
+  /* width: 184px; */
+  height: 46px;
+  font-family: Prompt;
+  font-size: 11.2px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #5f5f5f;
+  display: inline-block;
+  margin-right: 1.35rem;
+  margin-left: 1.35rem;
+}
+
+.score-detail .header {
+  font-size: 19.6px;
+}
+
+.vertical-separator{
+  border-left: 2px solid #d3d0d0;
+  height: 2.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+.triangle {
+  /* width: 9px; */
+  height: 14px;
+  color: #48b6a3;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+h1.score-stat {
+  /* width: 399px; */
+  height: 16px;
+  font-family: Prompt;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #48b6a3;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+/* Footer */
+.interest-logo {
+  /* width: 10px; */
+  height: 10px;
+  color: var(--warm-grey);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+h1.interest-amount {
+  /* width: 44px; */
+  height: 15px;
+  font-family: Prompt;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--warm-grey);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+h1.interest-text {
+  /* width: 84px; */
+  height: 15px;
+  font-family: Prompt;
+  font-size: 12px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--warm-grey);  
+  display: inline-block;
+}
+
+.share-logo {
+  width: 18px;
+  height: 23px;
+  object-fit: contain;
+  float: right;
 }
