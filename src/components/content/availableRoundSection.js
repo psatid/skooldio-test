@@ -32,7 +32,7 @@ export default class availableRoundSection extends Component {
 
   render() {
     return (
-      <div className="container mt-2">
+      <div className="mt-2">
         <div className="available-round">รอบที่เปิด</div>
 
         {this.state.roundState.map((round) => {

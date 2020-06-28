@@ -7,7 +7,7 @@
 /* Container */
 .main-container {
   width: 442px;
-  height: 540px;
+  height: 520px;
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   background-color: rgba(255, 255, 255, 0);
@@ -157,12 +157,11 @@ h1.round {
   background: none;
   text-align: center;
   float: right;
-  /* display: inline-block; */
 }
 
 .edit-score {
-  /* width: 61px;
-  height: 18px; */
+  width: 61px;
+  height: 18px;
   font-family: Prompt;
   font-size: 12px;
   font-weight: 500;
@@ -177,14 +176,14 @@ h1.round {
 }
 
 .edit-score-logo {
-  /* width: 18px;
-  height: 18px; */
+  /* width: 18px; */
+  height: 18px;
   object-fit: contain;
   display: inline-block;
 }
 
 .badgeIcon {
-  width: 27px;
+  /* width: 27px; */
   height: 35px;
   object-fit: contain;
   display: inline-block;
@@ -300,7 +299,7 @@ h1.interest-amount {
 }
 
 h1.interest-text {
-  /* width: 84px; */
+  width: 84px;
   height: 15px;
   font-family: Prompt;
   font-size: 12px;

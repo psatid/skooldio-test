@@ -6,11 +6,11 @@ export default class footer extends Component {
     return (
       <div className="container">
         <div className="interest-logo">
-          <i class="fas fa-user-alt"></i>
+          <i className="fas fa-user-alt"></i>
         </div>
         <h1 className="interest-amount">{this.props.interestedAmount}</h1>
         <h1 className="interest-text">คนที่สนใจ</h1>
-        <img src={shareIcon} class="share-logo" />
+        <img src={shareIcon} className="share-logo" alt="share" />
       </div>
     );
   }
